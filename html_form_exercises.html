@@ -95,12 +95,13 @@
         </ol>
     </section>
     <section>
+        <h2>Reviews</h2>
             <form>
                 <label for "reviewer_name">Reviewer name:</label>
                 <input type="text" name="reviewer_name" id="reviewer_name" size="20" required minlength="1">
                 <label>Rating:</label>
                     <!--All radio items should have the same name so they are grouped together-->
-                    <!--element id is unique to each element on the page and is used to link to its label-->
+                    <!--element id is unique to each element on the page and is used to link to its label by CSS-->
                     <!--value is the value submitted to server when user selects that input-->
                     <!--name is the attribute used to associate with value when the form is submitted to server-->
                     <input type ="radio" name="rating" id="1" value="1" checked>
@@ -115,8 +116,8 @@
                     <label for "5">5</label>
 
                 <label for "cooking_expertise">Cooking expertise:</label>
-                <select name="cook_level" id="cooking_expertise">
-                    <option value="" disabled>Select cooking expertise</option>
+                <select name="expertise" id="cooking_expertise">
+                    <option value="" disabled selected>Select cooking expertise</option>
                     <option value="Sometimes cook">Sometimes cook</option>
                     <option value="Cook everyday">Cook everyday</option>
                     <option value="Cooking is a hobby">Cooking is a hobby</option>
